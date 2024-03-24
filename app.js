@@ -32,9 +32,8 @@ app.use(limiter)
 
 
 // Mongo DB Database Connection
-//let URI="mongodb+srv://<username>:<pass>@cluster0.7uslu.mongodb.net/API";
-let local ="mongodb://localhost:27017/newapi"
-let OPTION={user:'',pass:'',autoIndex:true}
+ let local ="mongodb://localhost:27017/likebikroy"
+
 mongoose.connect(local).then((res)=>{
     console.log("Database Connected")
 }).catch((err)=>{
